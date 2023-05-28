@@ -48,3 +48,32 @@ $(".form-select")
       });
     }
   });
+
+var 출석부 = ["흥민", "영희", "철수", "재석"];
+
+function 이름찾기(name) {
+  출석부.forEach(function (a) {
+    if (name == a) {
+      console.log("있어요");
+    }
+  });
+}
+
+function 구구단() {
+  for (let i = 2; i < 10; i++) {
+    for (let j = 1; j < 10; j++) {
+      console.log(i * j);
+    }
+    console.log("------------");
+  }
+}
+
+var products = [
+  { id: 0, price: 70000, title: "Blossom Dress" },
+  { id: 1, price: 50000, title: "Springfield Shirt" },
+  { id: 2, price: 60000, title: "Black Monastery" },
+];
+
+$.get("https://codingapple1.github.io/price.json").done(function (data) {
+  console.log(data);
+});
