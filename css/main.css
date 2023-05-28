@@ -1,0 +1,4 @@
+.pseudo::first-line {
+  color: red;
+  font-size: 30px;
+}
