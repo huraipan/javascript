@@ -28,12 +28,29 @@
       crossorigin="anonymous"
     ></script>
 
-    <div class="container mt-3">
-      <div class="card p-3">
-        <span class="car-title">상품명</span>
-        <span>가격</span>
-      </div>
+    <div class="container">
+      <div class="row"></div>
     </div>
+
+    <div class="container">
+      <button class="btn btn-danger" id="more">더보기</button>
+    </div>
+
+    <script>
+      $("#more").click(function () {
+        $.get("https://codingapple1.github.io/js/more1.json").done((data) => {
+          data.forEach((a, i) => {
+            let card = `<div class="col-sm-4 product">
+              <img src="https://via.placeholder.com/600" class="w-100">
+              <h5>${data[i].title}</h5>
+              <p>가격 : ${data[i].price}</p>
+              </div>`;
+
+            $(".row").append(card);
+          });
+        });
+      });
+    </script>
 
     <script src="tab.js"></script>
 
