@@ -27,3 +27,19 @@ section {
   width: 100%;
   padding: 40px;
 }
+
+.items {
+  margin-top: 20px;
+  display: flex;
+}
+
+.item {
+  background-color: white;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.cart-btn {
+  background-color: black;
+  color: white;
+}
