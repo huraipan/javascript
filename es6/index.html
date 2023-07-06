@@ -11,9 +11,26 @@
 
 
 
-    var arr = [2,3,4];
+    // var arr = [2,3,4];
 
-    var [a,b,c] = [2,3,4];
+    // var [a,b,c = 10] = [2,3];
+
+    
+
+    // var obj = { name : "kim", age : 30};
+    // var name = obj.name;
+    // var age = obj.age;
+
+    // var { name, age } = { name : "kim", age : 30};
+
+    var obj = { name : "kim", age : 30};
+
+    function fun( [name, age]){
+      console.log(name);
+      console.log(age);
+    }
+
+    fun( [1,2] );
 
 
 
