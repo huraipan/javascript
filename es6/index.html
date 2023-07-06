@@ -7,8 +7,14 @@
 </head>
 <body>
 
-  <script>
+  <script type="module">
 
+    import * as zz from '/js/library.js'
+    console.log(zz.a);
+
+  </script>
+
+  <script>
 
 
     // var arr = [2,3,4];
@@ -23,19 +29,14 @@
 
     // var { name, age } = { name : "kim", age : 30};
 
-    var obj = { name : "kim", age : 30};
+    // var obj = { name : "kim", age : 30};
 
-    function fun( [name, age]){
-      console.log(name);
-      console.log(age);
-    }
+    // function fun( [name, age]){
+    //   console.log(name);
+    //   console.log(age);
+    // }
 
-    fun( [1,2] );
-
-
-
-
-
+    // fun( [1,2] );
 
 
     // var data = {
@@ -66,9 +67,6 @@
     //     this.health += health;
     //   }
     // }
-
-
-
 
 
     // class dog{
