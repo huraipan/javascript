@@ -22,21 +22,38 @@
   <script>
 
 
+    var arr = [2,3,4,5];
 
-
-    async function add(){
-      
-      var promise = new Promise(function(resolve, reject){
-        document.getElementById('button').addEventListener('click',function(){
-          resolve('success');
-        })
-      });
-
-      var result = await promise;
-      console.log(result);
+    for (var doc of arr) {
+      console.log(doc);
     }
 
-    add();
+
+
+
+
+
+
+    // var obj = { name : 'Kim', age : 30 };
+
+    // for (var key in obj){
+    //   console.log(obj[key])
+    // }
+
+
+    // async function add(){
+      
+    //   var promise = new Promise(function(resolve, reject){
+    //     document.getElementById('button').addEventListener('click',function(){
+    //       resolve('success');
+    //     })
+    //   });
+
+    //   var result = await promise;
+    //   console.log(result);
+    // }
+
+    // add();
 
 
 
