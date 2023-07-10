@@ -7,14 +7,26 @@
 </head>
 <body>
 
-  <script type="module">
+  <!-- <script type="module">
 
     import * as zz from '/js/library.js'
     console.log(zz.a);
 
-  </script>
+  </script> -->
 
   <script>
+
+    function first(hole){
+      console.log(1);
+      hole();
+    }
+
+    function second(){
+      console.log(2);
+    }
+
+    first(second);
+    
 
 
     // var arr = [2,3,4];
